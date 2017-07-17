@@ -5,6 +5,34 @@ simple differential drive robot - ROS
 
 ##### ROS version: /opt/ros/kinetic/
 
+Install Dependences:
+```
+sudo apt-get install ros-kinetic-desktop-full
+
+sudo apt-get install ros-kinetic-turtlebot-gazebo 
+
+sudo apt-get install ros-kinetic-turtlebot-teleop
+
+rosdep update
+```
+
+Check env:
+```
+printenv | grep ROS
+```
+> ROS_ROOT=/opt/ros/kinetic/share/ros
+ROS_PACKAGE_PATH=/home/weiyu/Dev/ROS/sddr_ws/src:/opt/ros/kinetic/share
+ROS_MASTER_URI=http://127.0.0.1:11311
+OLDPWD=/home/weiyu/Dev/ROS
+LD_LIBRARY_PATH=/home/weiyu/Dev/ROS/sddr_ws/devel/lib:/opt/ros/kinetic/lib
+PWD=/home/weiyu/Dev/ROS/sddr_ws
+ROS_HOSTNAME=localhost
+ROSLISP_PACKAGE_DIRECTORIES=/home/weiyu/Dev/ROS/sddr_ws/devel/share/common-lisp
+ROS_DISTRO=kinetic
+ROS_IP=127.0.0.1
+CMAKE_PREFIX_PATH=/home/weiyu/Dev/ROS/sddr_ws/devel:/opt/ros/kinetic
+ROS_ETC_DIR=/opt/ros/kinetic/etc/ros
+
 
 ## Get it to demo
 
@@ -13,8 +41,17 @@ simple differential drive robot - ROS
 source devel/setup.bash
 ```
 
-2. 
+2. build packages
+```
+cd /sddr_ws
 
+catkin_make
+```
+
+3. launch robot model in RViz
+```
+roslaunch diff_drive_rviz diff_drive_rviz.launch
+```
 
 ### Task:
 
