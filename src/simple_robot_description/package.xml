@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>simple_robot_description</name>
+  <version>0.1.1</version>
+  <description>simple_differential_drive_robot</description>
+  <maintainer email="wxue2012@gmail.com">Weiyu</maintainer>
+  <license>MIT</license>
+  <author  email="wxue2012@gmail.com">Weiyu</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
+</package>

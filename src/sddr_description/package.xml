@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>diff_drive_rviz</name>
+  <name>sddr_description</name>
   <version>0.1.1</version>
-  <description>diff_drive</description>
+  <description>simple_differential_drive_robot</description>
   <maintainer email="wxue2012@gmail.com">Weiyu</maintainer>
   <license>MIT</license>
   <author  email="wxue2012@gmail.com">Weiyu</author>
