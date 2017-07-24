@@ -58,7 +58,30 @@ roslaunch simple_robot_description simple_robot.launch
 roslaunch simple_robot_demo gazebo.launch
 ```
 
-It is controllable with keyboard.
+#### Control it
+
+  * It is controllable with keyboard.
+
+  ![teleop](./img/keyboard_teleop.png)
+
+
+  * You can open a new terminal to monitor teleop topic
+
+  ```
+  rostopic echo /cmd_vel_mux/input/teleop 
+  ```
+
+  * run square mode (square length is configurable by changing square_side_length = 1)
+  ```
+  rosrun simple_robot_demo square_pub.py
+
+  ```
+
+  * circle mode
+  ```
+  rostopic pub /cmd_vel_mux/input/teleop geometry_msgs/Twist -r 10 '[10, 0, 0]' '[0, 0, 5]'
+
+  ```
 
 ## How does it looks like in RViz and Gazebo
 
