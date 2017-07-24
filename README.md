@@ -50,8 +50,17 @@ catkin_make
 
 3. launch robot model in RViz
 ```
-roslaunch diff_drive_rviz diff_drive_rviz.launch
+roslaunch simple_robot_description simple_robot.launch 
 ```
+
+4. launch robot model in Gazebo
+```
+roslaunch simple_robot_demo gazebo.launch
+```
+
+It is controllable with keyboard.
+
+
 
 ### Task:
 

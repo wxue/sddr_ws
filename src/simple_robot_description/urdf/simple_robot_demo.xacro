@@ -6,13 +6,13 @@
   <xacro:property name="wheelLen" value="0.022" />
   <xacro:property name="wheelRad" value="0.1" />
   
-  <link name="world">
+  <!-- <link name="world">
   </link>
 
   <joint name="base_to_world" type="fixed">
     <parent link="world"/>
     <child link="base_link"/>
-  </joint>
+  </joint> -->
 
   <!--default inertial macro-->
   <xacro:macro name="default_inertial" params="mass">
