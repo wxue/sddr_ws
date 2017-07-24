@@ -60,26 +60,21 @@ roslaunch simple_robot_demo gazebo.launch
 
 It is controllable with keyboard.
 
+## How does it looks like in RViz and Gazebo
 
+#### In RViz
 
-### Task:
+![1](./img/RViz1.png)
+![2](./img/RViz2.png)
 
-Using ROS Kinetic Kame, create a catkin package with the following functionality:
+#### In Gazebo
 
-1. Declares dependencies (if you use other ROS packages)
+![1](./img/gazebo1.png)
+![2](./img/gazebo2.png)
 
-2. Contains documentation about the launchers and parameters if any.
+##### However, it has been first degisened as below.
+(I remodeled it for kinematics concerns - it the movement smoother.)
 
-3. Can be built with catkin_make
+![RViz](./img/RViz_0.png)
+![gazebo](./img/gazebo_0.png)
 
-4. Contains the URDF description of a simple differential drive robot
-
-5. Contains a launcher to view the robot model in RViz
-
-6. OPTIONAL: Contains a launcher to simulate the robot in Gazebo and allows for the following functionality via launcher parameters:
-
-    1. Keyboard teleop mode, where the robot motion can be commanded by the keyboard.
-
-    2. Circle mode, where the robot drives incessantly along a circle of a user-defined diameter (passed as a parameter in m)
-
-    3. Square mode, where the robot drives incessantly along a square of user-defined side-length (passed as a parameter in m)
