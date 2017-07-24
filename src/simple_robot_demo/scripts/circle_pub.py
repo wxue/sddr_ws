@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+
+__author__ = "Weiyu Xue"
+__license__ = "MIT"
+
 import rospy
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist 
