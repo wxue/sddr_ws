@@ -73,7 +73,7 @@ It is controllable with keyboard.
 ![2](./img/gazebo2.png)
 
 ##### However, it has been first degisened as below.
-(I remodeled it for kinematics concerns - it the movement smoother.)
+(I remodeled it for kinematics concerns - to make the movement smoother.)
 
 ![RViz](./img/RViz_0.png)
 ![gazebo](./img/gazebo_0.png)
