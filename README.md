@@ -71,15 +71,15 @@ roslaunch simple_robot_demo gazebo.launch
   rostopic echo /cmd_vel_mux/input/teleop 
   ```
 
-  * run square mode (square length is configurable by changing square_side_length = 1)
+  * run square mode (square length is configurable by changing square_side_length)
   ```
   rosrun simple_robot_demo square_pub.py
 
   ```
 
-  * circle mode
+  * run circle mode (circle radius is configurable by changing circle_radius)
   ```
-  rostopic pub /cmd_vel_mux/input/teleop geometry_msgs/Twist -r 10 '[10, 0, 0]' '[0, 0, 5]'
+  rosrun simple_robot_demo circle_pub.py
 
   ```
 
